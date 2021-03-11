@@ -1,4 +1,3 @@
-
 resource "azurerm_resource_group" "example" {
   name     = var.aks_config["resource_group_name"]
   location = var.aks_config["location"]
@@ -57,4 +56,3 @@ module "aks" {
   net_profile_service_cidr       = "10.0.0.0/16"
   depends_on                     = [module.network]
 }
-
